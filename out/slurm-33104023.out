@@ -1,0 +1,13 @@
+WARNING: Could not find any nv files on this host!
+Creating game environment ...
+Game environment initialized ...
+Using device=cpu ...
+Creating new agent ...
+
+Epoch #1
+Traceback (most recent call last):
+  File "/scratch/ugo1/fuzzy-enigma/main.py", line 172, in <module>
+    agent, game = train_agent(
+  File "/scratch/ugo1/fuzzy-enigma/main.py", line 89, in train_agent
+    if model == 'ddqn':
+NameError: name 'model' is not defined

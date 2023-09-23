@@ -1,0 +1,22 @@
+wandb: Starting wandb agent 🕵️
+2023-05-03 18:51:07,559 - wandb.wandb_agent - INFO - Running runs: []
+2023-05-03 18:51:08,137 - wandb.wandb_agent - INFO - Agent received command: run
+2023-05-03 18:51:08,137 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	discount_factor: 0.6012785953534382
+	epsilon_decay: 0.9968788808465392
+	frame_repeat: 16
+	lr: 0.08416306729432797
+	memory_size: 20000
+	steps_per_epoch: 2000
+2023-05-03 18:51:08,140 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.py --batch_size=64 --discount_factor=0.6012785953534382 --epsilon_decay=0.9968788808465392 --frame_repeat=16 --lr=0.08416306729432797 --memory_size=20000 --steps_per_epoch=2000
+2023-05-03 18:51:13,151 - wandb.wandb_agent - INFO - Running runs: ['c6tqill1']
+wandb: Currently logged in as: ugo1 (fuzzy-enigma). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.15.1
+wandb: Run data is saved locally in /scratch/ugo1/fuzzy-enigma/wandb/run-20230503_185117-c6tqill1
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run absurd-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/fuzzy-enigma/dqn-hyperparams-sweep
+wandb: 🧹 View sweep at https://wandb.ai/fuzzy-enigma/dqn-hyperparams-sweep/sweeps/7trn9eh4
+wandb: 🚀 View run at https://wandb.ai/fuzzy-enigma/dqn-hyperparams-sweep/runs/c6tqill1
+slurmstepd: error: *** JOB 33008247 ON gr037 CANCELLED AT 2023-05-03T19:13:23 ***

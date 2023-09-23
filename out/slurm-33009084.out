@@ -1,0 +1,674 @@
+wandb: Starting wandb agent 🕵️
+2023-05-03 20:51:08,645 - wandb.wandb_agent - INFO - Running runs: []
+2023-05-03 20:51:09,138 - wandb.wandb_agent - INFO - Agent received command: run
+2023-05-03 20:51:09,138 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 16
+	discount_factor: 0.07473128307670017
+	epsilon_decay: 0.9567932397552676
+	frame_repeat: 20
+	lr: 0.09871148094705962
+	memory_size: 5000
+	steps_per_epoch: 1000
+2023-05-03 20:51:09,141 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.py --batch_size=16 --discount_factor=0.07473128307670017 --epsilon_decay=0.9567932397552676 --frame_repeat=20 --lr=0.09871148094705962 --memory_size=5000 --steps_per_epoch=1000
+2023-05-03 20:51:14,152 - wandb.wandb_agent - INFO - Running runs: ['pp2sdsqa']
+wandb: Currently logged in as: ugo1 (fuzzy-enigma). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.15.1
+wandb: Run data is saved locally in /scratch/ugo1/fuzzy-enigma/wandb/run-20230503_205118-pp2sdsqa
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run wobbly-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/fuzzy-enigma/dqn-sweep
+wandb: 🧹 View sweep at https://wandb.ai/fuzzy-enigma/dqn-sweep/sweeps/ym0fmgo4
+wandb: 🚀 View run at https://wandb.ai/fuzzy-enigma/dqn-sweep/runs/pp2sdsqa
+Using device=cuda ...
+Creating game environment ...
+Game environment initialized ...
+Creating new agent ...
+
+
+Epoch #1
+	Results (Train): mean: -274.1 +/- 91.6, min: -375.0, max: 75.0,
+	Results (Test): mean: -310.0 +/- 7.7, min: -320.0 max: -300.0
+Total elapsed time: 0.87 minutes
+
+
+Epoch #2
+	Results (Train): mean: -260.2 +/- 108.4, min: -320.0, max: 95.0,
+	Results (Test): mean: -243.9 +/- 114.8, min: -310.0 max: -5.0
+Total elapsed time: 1.59 minutes
+
+
+Epoch #3
+	Results (Train): mean: -272.1 +/- 90.3, min: -320.0, max: 95.0,
+	Results (Test): mean: -285.5 +/- 57.0, min: -310.0 max: -115.0
+Total elapsed time: 2.32 minutes
+
+
+Epoch #4
+	Results (Train): mean: -270.8 +/- 98.7, min: -335.0, max: 75.0,
+	Results (Test): mean: -267.0 +/- 120.9, min: -325.0 max: 95.0
+Total elapsed time: 3.04 minutes
+
+
+Epoch #5
+	Results (Train): mean: -265.1 +/- 102.1, min: -320.0, max: 76.0,
+	Results (Test): mean: -269.0 +/- 115.0, min: -325.0 max: 75.0
+Total elapsed time: 3.76 minutes
+
+
+Epoch #6
+	Results (Train): mean: -263.6 +/- 98.9, min: -320.0, max: 95.0,
+	Results (Test): mean: -305.5 +/- 7.2, min: -320.0 max: -300.0
+Total elapsed time: 4.48 minutes
+
+
+Epoch #7
+	Results (Train): mean: -269.2 +/- 88.2, min: -330.0, max: 16.0,
+	Results (Test): mean: -266.5 +/- 107.2, min: -310.0 max: 55.0
+Total elapsed time: 5.20 minutes
+
+
+Epoch #8
+	Results (Train): mean: -271.2 +/- 88.1, min: -325.0, max: 75.0,
+	Results (Test): mean: -174.4 +/- 152.3, min: -320.0 max: 95.0
+Total elapsed time: 5.92 minutes
+
+
+Epoch #9
+	Results (Train): mean: -280.0 +/- 78.5, min: -330.0, max: 75.0,
+	Results (Test): mean: -305.0 +/- 5.0, min: -310.0 max: -300.0
+Total elapsed time: 6.65 minutes
+
+
+Epoch #10
+	Results (Train): mean: -270.0 +/- 105.8, min: -330.0, max: 95.0,
+	Results (Test): mean: -248.8 +/- 111.9, min: -310.0 max: 36.0
+Total elapsed time: 7.37 minutes
+
+
+Epoch #11
+	Results (Train): mean: -259.3 +/- 105.9, min: -320.0, max: 75.0,
+	Results (Test): mean: -304.0 +/- 4.9, min: -310.0 max: -300.0
+Total elapsed time: 8.10 minutes
+
+
+Epoch #12
+	Results (Train): mean: -266.9 +/- 107.2, min: -330.0, max: 95.0,
+	Results (Test): mean: -239.5 +/- 104.0, min: -310.0 max: -45.0
+Total elapsed time: 8.82 minutes
+
+
+Epoch #13
+	Results (Train): mean: -262.3 +/- 107.4, min: -320.0, max: 95.0,
+	Results (Test): mean: -272.4 +/- 89.6, min: -310.0 max: -4.0
+Total elapsed time: 9.55 minutes
+
+
+Epoch #14
+	Results (Train): mean: -278.1 +/- 82.3, min: -325.0, max: 75.0,
+	Results (Test): mean: -279.0 +/- 74.9, min: -315.0 max: -55.0
+Total elapsed time: 10.27 minutes
+
+
+Epoch #15
+	Results (Train): mean: -269.0 +/- 94.2, min: -330.0, max: 95.0,
+	Results (Test): mean: -255.3 +/- 80.2, min: -320.0 max: -84.0
+Total elapsed time: 11.00 minutes
+
+
+Epoch #16
+	Results (Train): mean: -285.5 +/- 81.2, min: -330.0, max: 95.0,
+	Results (Test): mean: -184.8 +/- 148.0, min: -300.0 max: 35.0
+Total elapsed time: 11.72 minutes
+
+
+Epoch #17
+	Results (Train): mean: -273.8 +/- 86.7, min: -330.0, max: 95.0,
+	Results (Test): mean: -235.0 +/- 150.7, min: -320.0 max: 95.0
+Total elapsed time: 12.44 minutes
+
+
+Epoch #18
+	Results (Train): mean: -252.7 +/- 114.5, min: -325.0, max: 95.0,
+	Results (Test): mean: -259.4 +/- 65.3, min: -310.0 max: -134.0
+Total elapsed time: 13.16 minutes
+
+
+Epoch #19
+	Results (Train): mean: -250.7 +/- 116.9, min: -320.0, max: 95.0,
+	Results (Test): mean: -305.0 +/- 8.1, min: -320.0 max: -300.0
+Total elapsed time: 13.89 minutes
+
+
+Epoch #20
+	Results (Train): mean: -281.6 +/- 85.8, min: -330.0, max: 95.0,
+	Results (Test): mean: -281.5 +/- 65.8, min: -320.0 max: -85.0
+Total elapsed time: 14.62 minutes
+======================================
+Training finished.
+2023-05-03 21:06:14,857 - wandb.wandb_agent - INFO - Cleaning up finished run: pp2sdsqa
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.023 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:      test_score ▁▄▂▃▃▁▃█▁▄▁▅▃▃▄▇▅▄▁▂
+wandb:  test_score_std ▁▆▃▇▆▁▆█▁▆▁▆▅▄▅██▄▁▄
+wandb:     train_score ▃▆▄▄▅▅▄▄▂▄▆▅▆▂▄▁▃██▂
+wandb: train_score_std ▃▆▃▅▅▅▃▃▁▆▆▆▆▂▄▂▂██▂
+wandb: 
+wandb: Run summary:
+wandb:      test_score -281.5
+wandb:  test_score_std 65.80464
+wandb:     train_score -281.58571
+wandb: train_score_std 85.82232
+wandb: 
+wandb: 🚀 View run wobbly-sweep-1 at: https://wandb.ai/fuzzy-enigma/dqn-sweep/runs/pp2sdsqa
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230503_205118-pp2sdsqa/logs
+2023-05-03 21:06:20,271 - wandb.wandb_agent - INFO - Agent received command: run
+2023-05-03 21:06:20,272 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	discount_factor: 0.6937752364066548
+	epsilon_decay: 0.9438438372165848
+	frame_repeat: 16
+	lr: 0.03776757841016667
+	memory_size: 5000
+	steps_per_epoch: 1000
+2023-05-03 21:06:20,274 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.py --batch_size=32 --discount_factor=0.6937752364066548 --epsilon_decay=0.9438438372165848 --frame_repeat=16 --lr=0.03776757841016667 --memory_size=5000 --steps_per_epoch=1000
+wandb: Currently logged in as: ugo1 (fuzzy-enigma). Use `wandb login --relogin` to force relogin
+2023-05-03 21:06:25,285 - wandb.wandb_agent - INFO - Running runs: ['yie6ogfy']
+wandb: Tracking run with wandb version 0.15.1
+wandb: Run data is saved locally in /scratch/ugo1/fuzzy-enigma/wandb/run-20230503_210623-yie6ogfy
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run hopeful-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/fuzzy-enigma/dqn-sweep
+wandb: 🧹 View sweep at https://wandb.ai/fuzzy-enigma/dqn-sweep/sweeps/ym0fmgo4
+wandb: 🚀 View run at https://wandb.ai/fuzzy-enigma/dqn-sweep/runs/yie6ogfy
+Using device=cuda ...
+Creating game environment ...
+Game environment initialized ...
+Creating new agent ...
+
+
+Epoch #1
+	Results (Train): mean: -266.1 +/- 104.8, min: -370.0, max: 76.0,
+	Results (Test): mean: -275.6 +/- 80.0, min: -310.0 max: -36.0
+Total elapsed time: 0.78 minutes
+
+
+Epoch #2
+	Results (Train): mean: -272.2 +/- 91.8, min: -320.0, max: 60.0,
+	Results (Test): mean: -250.9 +/- 124.8, min: -320.0 max: 79.0
+Total elapsed time: 1.52 minutes
+
+
+Epoch #3
+	Results (Train): mean: -275.6 +/- 84.8, min: -330.0, max: 15.0,
+	Results (Test): mean: -226.3 +/- 145.7, min: -340.0 max: 95.0
+Total elapsed time: 2.26 minutes
+
+
+Epoch #4
+	Results (Train): mean: -239.1 +/- 122.3, min: -330.0, max: 63.0,
+	Results (Test): mean: -268.9 +/- 115.2, min: -325.0 max: 76.0
+Total elapsed time: 3.00 minutes
+
+
+Epoch #5
+	Results (Train): mean: -263.4 +/- 100.2, min: -335.0, max: 63.0,
+	Results (Test): mean: -267.5 +/- 121.1, min: -320.0 max: 95.0
+Total elapsed time: 3.74 minutes
+
+
+Epoch #6
+	Results (Train): mean: -240.6 +/- 118.6, min: -330.0, max: 95.0,
+	Results (Test): mean: -259.6 +/- 96.7, min: -310.0 max: -17.0
+Total elapsed time: 4.49 minutes
+
+
+Epoch #7
+	Results (Train): mean: -245.4 +/- 124.3, min: -330.0, max: 95.0,
+	Results (Test): mean: -253.6 +/- 81.7, min: -310.0 max: -65.0
+Total elapsed time: 5.23 minutes
+
+
+Epoch #8
+	Results (Train): mean: -266.9 +/- 98.9, min: -330.0, max: 60.0,
+	Results (Test): mean: -308.0 +/- 8.7, min: -320.0 max: -300.0
+Total elapsed time: 5.98 minutes
+
+
+Epoch #9
+	Results (Train): mean: -250.4 +/- 119.7, min: -325.0, max: 95.0,
+	Results (Test): mean: -307.0 +/- 6.4, min: -320.0 max: -300.0
+Total elapsed time: 6.72 minutes
+
+
+Epoch #10
+	Results (Train): mean: -262.7 +/- 106.5, min: -325.0, max: 76.0,
+	Results (Test): mean: -262.4 +/- 83.1, min: -310.0 max: -81.0
+Total elapsed time: 7.47 minutes
+
+
+Epoch #11
+	Results (Train): mean: -257.2 +/- 108.1, min: -330.0, max: 95.0,
+	Results (Test): mean: -253.6 +/- 129.1, min: -330.0 max: 95.0
+Total elapsed time: 8.21 minutes
+
+
+Epoch #12
+	Results (Train): mean: -254.8 +/- 114.5, min: -330.0, max: 79.0,
+	Results (Test): mean: -210.1 +/- 129.4, min: -315.0 max: 60.0
+Total elapsed time: 8.94 minutes
+
+
+Epoch #13
+	Results (Train): mean: -273.1 +/- 87.7, min: -320.0, max: 79.0,
+	Results (Test): mean: -293.7 +/- 37.9, min: -320.0 max: -182.0
+Total elapsed time: 9.69 minutes
+
+
+Epoch #14
+	Results (Train): mean: -239.5 +/- 130.2, min: -335.0, max: 95.0,
+	Results (Test): mean: -273.5 +/- 96.6, min: -330.0 max: 15.0
+Total elapsed time: 10.43 minutes
+
+
+Epoch #15
+	Results (Train): mean: -213.2 +/- 145.9, min: -340.0, max: 95.0,
+	Results (Test): mean: -272.3 +/- 106.7, min: -320.0 max: 47.0
+Total elapsed time: 11.17 minutes
+
+
+Epoch #16
+	Results (Train): mean: -255.5 +/- 106.2, min: -335.0, max: 79.0,
+	Results (Test): mean: -256.6 +/- 125.9, min: -335.0 max: 95.0
+Total elapsed time: 11.91 minutes
+
+
+Epoch #17
+	Results (Train): mean: -249.6 +/- 113.2, min: -335.0, max: 95.0,
+	Results (Test): mean: -155.8 +/- 181.7, min: -310.0 max: 95.0
+Total elapsed time: 12.63 minutes
+
+
+Epoch #18
+	Results (Train): mean: -251.1 +/- 116.6, min: -330.0, max: 76.0,
+	Results (Test): mean: -286.7 +/- 63.8, min: -325.0 max: -97.0
+Total elapsed time: 13.38 minutes
+
+
+Epoch #19
+	Results (Train): mean: -247.1 +/- 118.1, min: -320.0, max: 95.0,
+	Results (Test): mean: -258.7 +/- 112.4, min: -320.0 max: 60.0
+Total elapsed time: 14.12 minutes
+
+
+Epoch #20
+	Results (Train): mean: -280.5 +/- 83.4, min: -335.0, max: 95.0,
+	Results (Test): mean: -286.6 +/- 68.8, min: -320.0 max: -81.0
+Total elapsed time: 14.87 minutes
+======================================
+Training finished.
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.023 MB of 0.023 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:      test_score ▂▄▅▃▃▃▄▁▁▃▄▆▂▃▃▃█▂▃▂
+wandb:  test_score_std ▄▆▇▅▆▅▄▁▁▄▆▆▂▅▅▆█▃▅▃
+wandb:     train_score ▂▂▂▅▃▅▅▂▄▃▃▄▂▅█▄▄▄▄▁
+wandb: train_score_std ▃▂▁▅▃▅▆▃▅▄▄▄▁▆█▄▄▅▅▁
+wandb: 
+wandb: Run summary:
+wandb:      test_score -286.6
+wandb:  test_score_std 68.84069
+wandb:     train_score -280.45455
+wandb: train_score_std 83.43856
+wandb: 
+wandb: 🚀 View run hopeful-sweep-2 at: https://wandb.ai/fuzzy-enigma/dqn-sweep/runs/yie6ogfy
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230503_210623-yie6ogfy/logs
+2023-05-03 21:21:31,088 - wandb.wandb_agent - INFO - Cleaning up finished run: yie6ogfy
+2023-05-03 21:21:31,449 - wandb.wandb_agent - INFO - Agent received command: run
+2023-05-03 21:21:31,449 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	discount_factor: 0.17415491476951822
+	epsilon_decay: 0.9587682040704996
+	frame_repeat: 8
+	lr: 0.04515536907006013
+	memory_size: 10000
+	steps_per_epoch: 2000
+2023-05-03 21:21:31,452 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.py --batch_size=64 --discount_factor=0.17415491476951822 --epsilon_decay=0.9587682040704996 --frame_repeat=8 --lr=0.04515536907006013 --memory_size=10000 --steps_per_epoch=2000
+wandb: Currently logged in as: ugo1 (fuzzy-enigma). Use `wandb login --relogin` to force relogin
+2023-05-03 21:21:36,459 - wandb.wandb_agent - INFO - Running runs: ['zl4aijsg']
+wandb: Tracking run with wandb version 0.15.1
+wandb: Run data is saved locally in /scratch/ugo1/fuzzy-enigma/wandb/run-20230503_212134-zl4aijsg
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run scarlet-sweep-3
+wandb: ⭐️ View project at https://wandb.ai/fuzzy-enigma/dqn-sweep
+wandb: 🧹 View sweep at https://wandb.ai/fuzzy-enigma/dqn-sweep/sweeps/ym0fmgo4
+wandb: 🚀 View run at https://wandb.ai/fuzzy-enigma/dqn-sweep/runs/zl4aijsg
+Using device=cuda ...
+Creating game environment ...
+Game environment initialized ...
+Creating new agent ...
+
+
+Epoch #1
+	Results (Train): mean: -210.9 +/- 200.9, min: -410.0, max: 95.0,
+	Results (Test): mean: -308.0 +/- 5.6, min: -315.0 max: -300.0
+Total elapsed time: 1.53 minutes
+
+
+Epoch #2
+	Results (Train): mean: -227.1 +/- 178.5, min: -410.0, max: 95.0,
+	Results (Test): mean: -228.7 +/- 125.5, min: -320.0 max: -25.0
+Total elapsed time: 3.02 minutes
+
+
+Epoch #3
+	Results (Train): mean: -218.9 +/- 203.2, min: -410.0, max: 95.0,
+	Results (Test): mean: -310.5 +/- 8.2, min: -330.0 max: -300.0
+Total elapsed time: 4.53 minutes
+
+
+Epoch #4
+	Results (Train): mean: -205.8 +/- 197.5, min: -410.0, max: 95.0,
+	Results (Test): mean: -126.4 +/- 229.0, min: -410.0 max: 76.0
+Total elapsed time: 5.97 minutes
+
+
+Epoch #5
+	Results (Train): mean: -206.4 +/- 200.6, min: -410.0, max: 95.0,
+	Results (Test): mean: -218.4 +/- 232.1, min: -410.0 max: 95.0
+Total elapsed time: 7.43 minutes
+
+
+Epoch #6
+	Results (Train): mean: -175.6 +/- 208.5, min: -410.0, max: 95.0,
+	Results (Test): mean: -313.1 +/- 185.3, min: -410.0 max: 76.0
+Total elapsed time: 8.92 minutes
+
+
+Epoch #7
+	Results (Train): mean: -169.9 +/- 219.1, min: -410.0, max: 95.0,
+	Results (Test): mean: -223.2 +/- 226.4, min: -410.0 max: 95.0
+Total elapsed time: 10.38 minutes
+
+
+Epoch #8
+	Results (Train): mean: -124.3 +/- 211.7, min: -410.0, max: 95.0,
+	Results (Test): mean: -262.0 +/- 219.7, min: -410.0 max: 95.0
+Total elapsed time: 11.85 minutes
+
+
+Epoch #9
+	Results (Train): mean: -136.7 +/- 220.7, min: -410.0, max: 95.0,
+	Results (Test): mean: -166.8 +/- 235.8, min: -405.0 max: 95.0
+Total elapsed time: 13.30 minutes
+
+
+Epoch #10
+	Results (Train): mean: -113.6 +/- 213.3, min: -410.0, max: 95.0,
+	Results (Test): mean: -217.4 +/- 232.2, min: -410.0 max: 95.0
+Total elapsed time: 14.75 minutes
+
+
+Epoch #11
+	Results (Train): mean: -119.0 +/- 213.8, min: -410.0, max: 95.0,
+	Results (Test): mean: -230.5 +/- 221.0, min: -410.0 max: 95.0
+Total elapsed time: 16.21 minutes
+
+
+Epoch #12
+	Results (Train): mean: -128.1 +/- 212.3, min: -410.0, max: 95.0,
+	Results (Test): mean: -259.8 +/- 224.0, min: -410.0 max: 95.0
+Total elapsed time: 17.68 minutes
+
+
+Epoch #13
+	Results (Train): mean: -146.2 +/- 209.9, min: -410.0, max: 95.0,
+	Results (Test): mean: -235.9 +/- 149.9, min: -320.0 max: 87.0
+Total elapsed time: 19.16 minutes
+
+
+Epoch #14
+	Results (Train): mean: -127.7 +/- 211.5, min: -410.0, max: 95.0,
+	Results (Test): mean: -162.6 +/- 242.5, min: -410.0 max: 95.0
+Total elapsed time: 20.60 minutes
+
+
+Epoch #15
+	Results (Train): mean: -135.4 +/- 213.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -214.4 +/- 235.6, min: -410.0 max: 95.0
+Total elapsed time: 22.06 minutes
+
+
+Epoch #16
+	Results (Train): mean: -150.2 +/- 212.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -163.9 +/- 242.1, min: -410.0 max: 87.0
+Total elapsed time: 23.51 minutes
+
+
+Epoch #17
+	Results (Train): mean: -110.7 +/- 216.0, min: -410.0, max: 95.0,
+	Results (Test): mean: -153.7 +/- 217.0, min: -410.0 max: 95.0
+Total elapsed time: 24.96 minutes
+
+
+Epoch #18
+	Results (Train): mean: -116.9 +/- 202.8, min: -410.0, max: 95.0,
+	Results (Test): mean: -158.1 +/- 228.9, min: -410.0 max: 76.0
+Total elapsed time: 26.41 minutes
+
+
+Epoch #19
+	Results (Train): mean: -112.9 +/- 214.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -212.1 +/- 235.4, min: -410.0 max: 95.0
+Total elapsed time: 27.87 minutes
+
+
+Epoch #20
+	Results (Train): mean: -142.1 +/- 225.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -33.4 +/- 188.5, min: -410.0 max: 95.0
+Total elapsed time: 29.28 minutes
+======================================
+Training finished.
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.019 MB uploaded (0.000 MB deduped)wandb: | 0.023 MB of 0.023 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:      test_score ▁▃▁▆▃▁▃▂▅▃▃▂▃▅▃▅▅▅▄█
+wandb:  test_score_std ▁▅▁██▆█▇██▇▇▅███▇██▆
+wandb:     train_score ▂▁▁▂▂▄▄▇▆██▇▆▇▇▆███▆
+wandb: train_score_std ▄▁▅▄▄▅▇▆▇▆▆▆▆▆▆▆▇▅▆█
+wandb: 
+wandb: Run summary:
+wandb:      test_score -33.4
+wandb:  test_score_std 188.483
+wandb:     train_score -142.07767
+wandb: train_score_std 225.41408
+wandb: 
+wandb: 🚀 View run scarlet-sweep-3 at: https://wandb.ai/fuzzy-enigma/dqn-sweep/runs/zl4aijsg
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230503_212134-zl4aijsg/logs
+2023-05-03 21:51:07,082 - wandb.wandb_agent - INFO - Cleaning up finished run: zl4aijsg
+2023-05-03 21:51:07,417 - wandb.wandb_agent - INFO - Agent received command: run
+2023-05-03 21:51:07,418 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	discount_factor: 0.03478234999334769
+	epsilon_decay: 0.9088741091071612
+	frame_repeat: 4
+	lr: 0.025109848166521904
+	memory_size: 5000
+	steps_per_epoch: 3000
+2023-05-03 21:51:07,419 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.py --batch_size=64 --discount_factor=0.03478234999334769 --epsilon_decay=0.9088741091071612 --frame_repeat=4 --lr=0.025109848166521904 --memory_size=5000 --steps_per_epoch=3000
+wandb: Currently logged in as: ugo1 (fuzzy-enigma). Use `wandb login --relogin` to force relogin
+2023-05-03 21:51:12,429 - wandb.wandb_agent - INFO - Running runs: ['umv8wms3']
+wandb: Tracking run with wandb version 0.15.1
+wandb: Run data is saved locally in /scratch/ugo1/fuzzy-enigma/wandb/run-20230503_215110-umv8wms3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lively-sweep-4
+wandb: ⭐️ View project at https://wandb.ai/fuzzy-enigma/dqn-sweep
+wandb: 🧹 View sweep at https://wandb.ai/fuzzy-enigma/dqn-sweep/sweeps/ym0fmgo4
+wandb: 🚀 View run at https://wandb.ai/fuzzy-enigma/dqn-sweep/runs/umv8wms3
+Using device=cuda ...
+Creating game environment ...
+Game environment initialized ...
+Creating new agent ...
+
+
+Epoch #1
+	Results (Train): mean: -171.6 +/- 225.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -273.8 +/- 120.3, min: -320.0 max: 87.0
+Total elapsed time: 2.33 minutes
+
+
+Epoch #2
+	Results (Train): mean: -217.2 +/- 185.2, min: -410.0, max: 95.0,
+	Results (Test): mean: -235.3 +/- 216.2, min: -410.0 max: 95.0
+Total elapsed time: 4.58 minutes
+
+
+Epoch #3
+	Results (Train): mean: -183.0 +/- 207.6, min: -405.0, max: 95.0,
+	Results (Test): mean: -224.6 +/- 225.2, min: -410.0 max: 95.0
+Total elapsed time: 6.82 minutes
+
+
+Epoch #4
+	Results (Train): mean: -189.5 +/- 206.6, min: -410.0, max: 95.0,
+	Results (Test): mean: -258.3 +/- 119.9, min: -330.0 max: 47.0
+Total elapsed time: 9.12 minutes
+
+
+Epoch #5
+	Results (Train): mean: -183.5 +/- 201.7, min: -410.0, max: 95.0,
+	Results (Test): mean: -285.2 +/- 102.9, min: -330.0 max: 23.0
+Total elapsed time: 11.43 minutes
+
+
+Epoch #6
+	Results (Train): mean: -186.8 +/- 186.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -260.3 +/- 224.5, min: -410.0 max: 95.0
+Total elapsed time: 13.68 minutes
+
+
+Epoch #7
+	Results (Train): mean: -155.8 +/- 219.0, min: -410.0, max: 95.0,
+	Results (Test): mean: -307.4 +/- 196.5, min: -410.0 max: 95.0
+Total elapsed time: 15.96 minutes
+
+
+Epoch #8
+	Results (Train): mean: -145.8 +/- 227.0, min: -410.0, max: 95.0,
+	Results (Test): mean: -198.1 +/- 185.2, min: -330.0 max: 91.0
+Total elapsed time: 18.21 minutes
+
+
+Epoch #9
+	Results (Train): mean: -213.1 +/- 207.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -214.8 +/- 235.2, min: -410.0 max: 95.0
+Total elapsed time: 20.44 minutes
+
+
+Epoch #10
+	Results (Train): mean: -160.2 +/- 225.6, min: -410.0, max: 95.0,
+	Results (Test): mean: -276.2 +/- 120.0, min: -330.0 max: 83.0
+Total elapsed time: 22.75 minutes
+
+
+Epoch #11
+	Results (Train): mean: -223.4 +/- 191.8, min: -410.0, max: 95.0,
+	Results (Test): mean: -168.9 +/- 238.0, min: -410.0 max: 95.0
+Total elapsed time: 24.96 minutes
+
+
+Epoch #12
+	Results (Train): mean: -185.1 +/- 194.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -354.0 +/- 149.7, min: -405.0 max: 95.0
+Total elapsed time: 27.25 minutes
+
+
+Epoch #13
+	Results (Train): mean: -267.2 +/- 166.6, min: -410.0, max: 95.0,
+	Results (Test): mean: -221.7 +/- 154.1, min: -330.0 max: 67.0
+Total elapsed time: 29.53 minutes
+
+
+Epoch #14
+	Results (Train): mean: -194.8 +/- 192.2, min: -410.0, max: 95.0,
+	Results (Test): mean: -273.4 +/- 177.8, min: -410.0 max: 95.0
+Total elapsed time: 31.80 minutes
+
+
+Epoch #15
+	Results (Train): mean: -225.4 +/- 200.5, min: -410.0, max: 95.0,
+	Results (Test): mean: -224.5 +/- 148.0, min: -325.0 max: 91.0
+Total elapsed time: 34.08 minutes
+
+
+Epoch #16
+	Results (Train): mean: -204.5 +/- 198.2, min: -410.0, max: 95.0,
+	Results (Test): mean: -197.9 +/- 178.1, min: -320.0 max: 95.0
+Total elapsed time: 36.33 minutes
+
+
+Epoch #17
+	Results (Train): mean: -239.3 +/- 164.7, min: -410.0, max: 95.0,
+	Results (Test): mean: -275.9 +/- 122.6, min: -330.0 max: 91.0
+Total elapsed time: 38.64 minutes
+
+
+Epoch #18
+	Results (Train): mean: -217.6 +/- 183.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -318.5 +/- 9.2, min: -340.0 max: -310.0
+Total elapsed time: 40.96 minutes
+
+
+Epoch #19
+	Results (Train): mean: -261.9 +/- 166.1, min: -410.0, max: 95.0,
+	Results (Test): mean: -277.1 +/- 118.9, min: -330.0 max: 79.0
+Total elapsed time: 43.27 minutes
+
+
+Epoch #20
+	Results (Train): mean: -197.0 +/- 203.4, min: -410.0, max: 95.0,
+	Results (Test): mean: -128.8 +/- 229.3, min: -410.0 max: 95.0
+Total elapsed time: 45.46 minutes
+======================================
+Training finished.
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.006 MB of 0.023 MB uploaded (0.000 MB deduped)wandb: \ 0.023 MB of 0.023 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:      test_score ▃▅▅▄▃▄▂▆▅▃▇▁▅▄▅▆▃▂▃█
+wandb:  test_score_std ▄▇█▄▄█▇▆█▄█▅▅▆▅▆▄▁▄█
+wandb:     train_score ▇▄▆▅▆▆▇█▄▇▄▆▁▅▃▅▃▄▁▅
+wandb: train_score_std █▃▆▆▅▃▇█▆█▄▄▁▄▅▅▁▃▁▅
+wandb: 
+wandb: Run summary:
+wandb:      test_score -128.8
+wandb:  test_score_std 229.29928
+wandb:     train_score -196.9661
+wandb: train_score_std 203.36533
+wandb: 
+wandb: 🚀 View run lively-sweep-4 at: https://wandb.ai/fuzzy-enigma/dqn-sweep/runs/umv8wms3
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230503_215110-umv8wms3/logs
+2023-05-03 22:36:54,348 - wandb.wandb_agent - INFO - Cleaning up finished run: umv8wms3
+2023-05-03 22:36:54,777 - wandb.wandb_agent - INFO - Agent received command: run
+2023-05-03 22:36:54,777 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	discount_factor: 0.0836051994476739
+	epsilon_decay: 0.960557875700468
+	frame_repeat: 8
+	lr: 0.04384344680374127
+	memory_size: 15000
+	steps_per_epoch: 3000
+2023-05-03 22:36:54,779 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.py --batch_size=64 --discount_factor=0.0836051994476739 --epsilon_decay=0.960557875700468 --frame_repeat=8 --lr=0.04384344680374127 --memory_size=15000 --steps_per_epoch=3000
+wandb: Currently logged in as: ugo1 (fuzzy-enigma). Use `wandb login --relogin` to force relogin
+2023-05-03 22:36:59,803 - wandb.wandb_agent - INFO - Running runs: ['g1pqj6n3']
+wandb: Tracking run with wandb version 0.15.1
+wandb: Run data is saved locally in /scratch/ugo1/fuzzy-enigma/wandb/run-20230503_223657-g1pqj6n3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clean-sweep-5
+wandb: ⭐️ View project at https://wandb.ai/fuzzy-enigma/dqn-sweep
+wandb: 🧹 View sweep at https://wandb.ai/fuzzy-enigma/dqn-sweep/sweeps/ym0fmgo4
+wandb: 🚀 View run at https://wandb.ai/fuzzy-enigma/dqn-sweep/runs/g1pqj6n3
+slurmstepd: error: *** JOB 33009084 ON gr035 CANCELLED AT 2023-05-03T23:00:34 ***

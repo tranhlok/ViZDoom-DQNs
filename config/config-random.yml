@@ -1,0 +1,24 @@
+program: sweep.py
+method: random
+name: dqn-sweep-random
+metric:
+  goal: maximize
+  name: test_score
+parameters:
+  batch_size:
+    values: [16, 32, 64]
+  lr:
+    min: 0.0001
+    max: 0.1
+  discount_factor:
+    min: 0.01
+    max: 0.99
+  memory_size:
+    values: [5000, 10000, 15000]
+  frame_repeat:
+    values: [4, 8, 12, 16]
+  steps_per_epoch:
+    values: [500, 1000, 2000]
+  epsilon_decay:
+    min: 0.9900
+    max: 0.9999

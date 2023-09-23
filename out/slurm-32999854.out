@@ -1,0 +1,170 @@
+wandb: Starting wandb agent 🕵️
+2023-05-03 15:11:08,588 - wandb.wandb_agent - INFO - Running runs: []
+2023-05-03 15:11:08,902 - wandb.wandb_agent - INFO - Agent received command: run
+2023-05-03 15:11:08,902 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	discount_factor: 0.3009488676330739
+	epsilon_decay: 0.9917681406054948
+	frame_repeat: 16
+	lr: 0.06981608534751794
+	memory_size: 5000
+	steps_per_epoch: 1000
+2023-05-03 15:11:08,908 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.py --batch_size=64 --discount_factor=0.3009488676330739 --epsilon_decay=0.9917681406054948 --frame_repeat=16 --lr=0.06981608534751794 --memory_size=5000 --steps_per_epoch=1000
+2023-05-03 15:11:13,925 - wandb.wandb_agent - INFO - Running runs: ['cgq3psua']
+wandb: Currently logged in as: ugo1 (fuzzy-enigma). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.15.1
+wandb: Run data is saved locally in /scratch/ugo1/fuzzy-enigma/wandb/run-20230503_151118-cgq3psua
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run youthful-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/fuzzy-enigma/vizdoom-hyperparams-sweep
+wandb: 🧹 View sweep at https://wandb.ai/fuzzy-enigma/vizdoom-hyperparams-sweep/sweeps/q03b5297
+wandb: 🚀 View run at https://wandb.ai/fuzzy-enigma/vizdoom-hyperparams-sweep/runs/cgq3psua
+Creating game environment ...
+Game environment initialized ...
+Creating new agent ...
+
+Epoch #1
+Results: mean: -186.1 +/- 153.6, min: -350.0, max: 62.0,
+
+Testing...
+Results: mean: -156.2 +/- 162.3, min: -350.0 max: 46.0
+Total elapsed time: 0.75 minutes
+
+Epoch #2
+Results: mean: -233.1 +/- 128.9, min: -355.0, max: 62.0,
+
+Testing...
+Results: mean: -219.1 +/- 136.9, min: -335.0 max: 62.0
+Total elapsed time: 1.49 minutes
+
+Epoch #3
+Results: mean: -214.5 +/- 143.8, min: -335.0, max: 62.0,
+
+Testing...
+Results: mean: -263.7 +/- 104.5, min: -325.0 max: 14.0
+Total elapsed time: 2.24 minutes
+
+Epoch #4
+Results: mean: -238.7 +/- 127.4, min: -325.0, max: 62.0,
+
+Testing...
+Results: mean: -236.6 +/- 126.0, min: -320.0 max: 62.0
+Total elapsed time: 2.98 minutes
+
+Epoch #5
+Results: mean: -259.7 +/- 103.4, min: -325.0, max: 46.0,
+
+Testing...
+Results: mean: -294.8 +/- 35.9, min: -315.0 max: -188.0
+Total elapsed time: 3.72 minutes
+
+Epoch #6
+Results: mean: -275.7 +/- 87.2, min: -325.0, max: 46.0,
+
+Testing...
+Results: mean: -302.0 +/- 3.3, min: -310.0 max: -300.0
+Total elapsed time: 4.46 minutes
+
+Epoch #7
+Results: mean: -264.7 +/- 94.5, min: -315.0, max: 46.0,
+
+Testing...
+Results: mean: -265.3 +/- 109.1, min: -310.0 max: 62.0
+Total elapsed time: 5.21 minutes
+
+Epoch #8
+Results: mean: -296.6 +/- 37.2, min: -315.0, max: -80.0,
+
+Testing...
+Results: mean: -277.9 +/- 79.7, min: -310.0 max: -39.0
+Total elapsed time: 6.08 minutes
+
+Epoch #9
+Results: mean: -280.2 +/- 79.5, min: -310.0, max: 46.0,
+
+Testing...
+Results: mean: -290.8 +/- 36.2, min: -315.0 max: -183.0
+Total elapsed time: 6.96 minutes
+
+Epoch #10
+Results: mean: -296.9 +/- 29.3, min: -320.0, max: -172.0,
+
+Testing...
+Results: mean: -251.8 +/- 109.2, min: -310.0 max: -18.0
+Total elapsed time: 7.83 minutes
+
+Epoch #11
+Results: mean: -272.4 +/- 93.7, min: -310.0, max: 46.0,
+
+Testing...
+Results: mean: -305.0 +/- 3.9, min: -310.0 max: -300.0
+Total elapsed time: 8.70 minutes
+
+Epoch #12
+Results: mean: -286.6 +/- 69.4, min: -315.0, max: 46.0,
+
+Testing...
+Results: mean: -305.5 +/- 3.5, min: -310.0 max: -300.0
+Total elapsed time: 9.58 minutes
+
+Epoch #13
+Results: mean: -280.6 +/- 71.4, min: -315.0, max: 30.0,
+
+Testing...
+Results: mean: -278.5 +/- 76.3, min: -315.0 max: -50.0
+Total elapsed time: 10.46 minutes
+
+Epoch #14
+Results: mean: -284.8 +/- 68.2, min: -320.0, max: 46.0,
+
+Testing...
+Results: mean: -274.7 +/- 91.0, min: -315.0 max: -2.0
+Total elapsed time: 11.32 minutes
+
+Epoch #15
+Results: mean: -268.2 +/- 89.0, min: -315.0, max: 46.0,
+
+Testing...
+Results: mean: -269.4 +/- 105.1, min: -305.0 max: 46.0
+Total elapsed time: 12.19 minutes
+======================================
+Training finished.
+2023-05-03 15:23:41,101 - wandb.wandb_agent - INFO - Cleaning up finished run: cgq3psua
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.006 MB of 0.022 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:           epoch ▁▁▂▃▃▃▄▅▅▅▆▇▇▇█
+wandb:      test_score █▅▃▄▂▁▃▂▂▄▁▁▂▂▃
+wandb:  test_score_std █▇▅▆▂▁▆▄▂▆▁▁▄▅▅
+wandb:     train_score █▅▆▅▃▂▃▁▂▁▃▂▂▂▃
+wandb: train_score_std █▇▇▇▅▄▅▁▄▁▅▃▃▃▄
+wandb: 
+wandb: Run summary:
+wandb:           epoch 14
+wandb:      test_score -269.4
+wandb:  test_score_std 105.1439
+wandb:     train_score -268.17857
+wandb: train_score_std 89.04696
+wandb: 
+wandb: 🚀 View run youthful-sweep-1 at: https://wandb.ai/fuzzy-enigma/vizdoom-hyperparams-sweep/runs/cgq3psua
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230503_151118-cgq3psua/logs
+2023-05-03 15:23:45,303 - wandb.wandb_agent - INFO - Agent received command: run
+2023-05-03 15:23:45,303 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	discount_factor: 0.7376240751852035
+	epsilon_decay: 0.9926700499557448
+	frame_repeat: 8
+	lr: 0.04195254295359136
+	memory_size: 5000
+	steps_per_epoch: 2000
+2023-05-03 15:23:45,307 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python sweep.py --batch_size=32 --discount_factor=0.7376240751852035 --epsilon_decay=0.9926700499557448 --frame_repeat=8 --lr=0.04195254295359136 --memory_size=5000 --steps_per_epoch=2000
+wandb: Currently logged in as: ugo1 (fuzzy-enigma). Use `wandb login --relogin` to force relogin
+2023-05-03 15:23:50,322 - wandb.wandb_agent - INFO - Running runs: ['xnzr6xwf']
+wandb: Tracking run with wandb version 0.15.1
+wandb: Run data is saved locally in /scratch/ugo1/fuzzy-enigma/wandb/run-20230503_152347-xnzr6xwf
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run crimson-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/fuzzy-enigma/vizdoom-hyperparams-sweep
+wandb: 🧹 View sweep at https://wandb.ai/fuzzy-enigma/vizdoom-hyperparams-sweep/sweeps/q03b5297
+wandb: 🚀 View run at https://wandb.ai/fuzzy-enigma/vizdoom-hyperparams-sweep/runs/xnzr6xwf

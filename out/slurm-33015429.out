@@ -1,0 +1,4 @@
+WARNING: Could not find any nv files on this host!
+wandb: Starting wandb agent 🕵️
+wandb: ERROR Find detailed error logs at: /scratch/ugo1/fuzzy-enigma/wandb/debug-cli.ugo1.log
+Error: Sweep fuzzy-enigma/dqn-sweep/umv8wms3 not found
